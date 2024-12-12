@@ -1,3 +1,4 @@
-1.  cat el_quijote.txt | grep -ci quijote
-2.  cat el_quijote.txt | grep -vi quijote
-3.  grep -ric quijote ./*
+1.  cat el_quijote.txt | grep -ci quijote   (590)
+2.  cat el_quijote.txt | grep -civ quijote  (1596)
+3.  grep -ric quijote ./*                   (Con el asterisco solo busca en esa carpeta concreta. En comandos hay 2, en quijote 590)
+4.  grep -rciv quijote ./*                  (0, 1596)
