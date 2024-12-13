@@ -1,9 +1,10 @@
 1.  cat el_quijote.txt | grep -ci quijote   (590)
 2.  cat el_quijote.txt | grep -civ quijote  (1596)
 3.  grep -ric quijote ./*                   (Con el asterisco solo busca en esa carpeta concreta. También vale "grep -ic quijote *". En comandos hay 2, en quijote 590)
-4.  grep -rciv quijote ./*                  (0, 1596)
+4.  grep -rci quijote ./* | grep -v ":0"    (EDITADO)
 5.  sed 's/panza/barriga/g' el_quijote.txt  (/s para sustituir, /g para todas las ocurrencias)
-6.  sed 's/panza/barriga/gi' el_quijote.txt (/gi para ignorar caps)
+6.  sed 's/panza/barriga/gi' el_quijote.txt (/gi para ignorar caps. CON -i AL PRINCIPIO EDITA, ASI SOLO MUESTRA)
 7.  head -c 4 el_quijote.txt
-8.  head -c 4000 el_quijote.txt
-9.  cat el_quijote.txt | grep -n 14 -A 11
+8.  head -c 4000 el_quijote.txt             (sirve 4k)
+9.  cat el_quijote.txt | head -n 25 | tail -n 14    (grep -n 14 -A 11 funcionaba, pero grep es para PATRONES)
+10. sort -fr el_quijote.txt                 (-f ignora caps, -r reverse para que sea orden descendente)
