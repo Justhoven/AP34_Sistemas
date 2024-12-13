@@ -2,4 +2,5 @@
 2.  cat el_quijote.txt | grep -civ quijote  (1596)
 3.  grep -ric quijote ./*                   (Con el asterisco solo busca en esa carpeta concreta. También vale "grep -ic quijote *". En comandos hay 2, en quijote 590)
 4.  grep -rciv quijote ./*                  (0, 1596)
-5.  sed "s/panza/barriga/g" el_quijote.txt  (/s para sustituir, /g para todas las ocurrencias)
+5.  sed 's/panza/barriga/g' el_quijote.txt  (/s para sustituir, /g para todas las ocurrencias)
+6.  sed 's/panza/barriga/gi' el_quijote.txt (/gi para ignorar caps)
