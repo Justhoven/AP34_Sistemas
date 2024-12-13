@@ -4,3 +4,4 @@
 4.  grep -rciv quijote ./*                  (0, 1596)
 5.  sed 's/panza/barriga/g' el_quijote.txt  (/s para sustituir, /g para todas las ocurrencias)
 6.  sed 's/panza/barriga/gi' el_quijote.txt (/gi para ignorar caps)
+7.  head -c 4 el_quijote.txt
