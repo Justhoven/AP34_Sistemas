@@ -6,3 +6,4 @@
 6.  sed 's/panza/barriga/gi' el_quijote.txt (/gi para ignorar caps)
 7.  head -c 4 el_quijote.txt
 8.  head -c 4000 el_quijote.txt
+9.  cat el_quijote.txt | grep -n 14 -A 11
